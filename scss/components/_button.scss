@@ -1,0 +1,10 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.btn-primary {
+  @include btn($primary-btn-color, $secondary-text-color);
+}
+
+.btn-secondary {
+  @include btn($secondary-btn-color, $primary-text-color);
+}
