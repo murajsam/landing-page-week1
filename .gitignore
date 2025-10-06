@@ -1,0 +1,7 @@
+# Ignore node_modules and dist
+node_modules/
+dist/
+*.css.map
+
+# Ignore VSCode settings
+.vscode/
