@@ -1,0 +1,7 @@
+@use "../utils/variables" as *;
+
+html {
+  font-family: $font-main;
+  color: $primary-text-color;
+  font-size: 62.5%;
+}
