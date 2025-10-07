@@ -1,0 +1,44 @@
+@use "../utils/variables" as *;
+@use "../components/button" as *;
+@use "../utils/mixins" as *;
+
+.partners {
+  margin-bottom: 6rem;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__border {
+    width: 100%;
+    display: block;
+    height: 1px;
+    background-color: $primary-text-color;
+    opacity: 0.2;
+  }
+
+  &__logos {
+    padding: 5.5rem 1.3rem;
+
+    &-desktop {
+      display: none;
+    }
+  }
+
+  @include respond-to("desktop") {
+    margin-bottom: 10rem;
+
+    &__logos {
+      padding: 6.8rem 7.5rem;
+
+      &-mobile {
+        display: none;
+      }
+      &-desktop {
+        display: block;
+      }
+    }
+  }
+}
