@@ -1,0 +1,19 @@
+@use "../utils/variables" as *;
+@use "../components/button" as *;
+@use "../utils/mixins" as *;
+
+.product {
+  margin-bottom: 6rem;
+  &__container {
+    background: $tertiary-background-color;
+    border-radius: 5.86px;
+  }
+
+  @include respond-to("desktop") {
+    margin-bottom: 10rem;
+
+    &__container {
+      border-radius: 2rem;
+    }
+  }
+}

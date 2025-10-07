@@ -211,6 +211,9 @@ button {
     letter-spacing: 0%;
     max-width: 46.5rem;
   }
+  .hero__image {
+    border-radius: 2rem;
+  }
 }
 
 .partners {
@@ -247,5 +250,21 @@ button {
   }
   .partners__logos-desktop {
     display: block;
+  }
+}
+
+.product {
+  margin-bottom: 6rem;
+}
+.product__container {
+  background: #fdf5df;
+  border-radius: 5.86px;
+}
+@media (min-width: 1280px) {
+  .product {
+    margin-bottom: 10rem;
+  }
+  .product__container {
+    border-radius: 2rem;
   }
 }/*# sourceMappingURL=main.css.map */
