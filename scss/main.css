@@ -137,6 +137,7 @@ button {
 .hero {
   max-width: 33.5rem;
   margin: 0 auto;
+  margin-bottom: 7rem;
 }
 .hero__container {
   display: flex;
@@ -178,11 +179,13 @@ button {
 .hero__image {
   border-radius: 13.4px;
   background-color: #333333;
+  flex: 1;
 }
 @media (min-width: 1280px) {
   .hero {
     max-width: 100%;
     margin: 0 0;
+    margin-bottom: 7.7rem;
   }
   .hero__container {
     flex-direction: row;
@@ -192,10 +195,6 @@ button {
   .hero__content {
     align-items: start;
     max-width: 46.5rem;
-  }
-  .hero__image {
-    flex: 1;
-    max-width: 50rem;
   }
   .hero__title {
     font-size: 6rem;
@@ -211,5 +210,42 @@ button {
     line-height: 3.2rem;
     letter-spacing: 0%;
     max-width: 46.5rem;
+  }
+}
+
+.partners {
+  margin-bottom: 6rem;
+}
+.partners__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.partners__border {
+  width: 100%;
+  display: block;
+  height: 1px;
+  background-color: #fff;
+  opacity: 0.2;
+}
+.partners__logos {
+  padding: 5.5rem 1.3rem;
+}
+.partners__logos-desktop {
+  display: none;
+}
+@media (min-width: 1280px) {
+  .partners {
+    margin-bottom: 10rem;
+  }
+  .partners__logos {
+    padding: 6.8rem 7.5rem;
+  }
+  .partners__logos-mobile {
+    display: none;
+  }
+  .partners__logos-desktop {
+    display: block;
   }
 }/*# sourceMappingURL=main.css.map */
