@@ -70,11 +70,15 @@ button {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  opacity: 0.8;
 }
 
 .btn-secondary {
   background-color: #f8d57e;
-  color: #fff;
+  color: #333333;
   width: 17.5rem;
   height: 5rem;
   border: none;
@@ -83,8 +87,15 @@ button {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-secondary:hover {
+  opacity: 0.8;
 }
 
+.header {
+  margin-bottom: 7rem;
+}
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -115,7 +126,90 @@ button {
   text-align: right;
 }
 @media (min-width: 1280px) {
+  .header {
+    margin-bottom: 7.7rem;
+  }
   .header__nav {
     display: block;
+  }
+}
+
+.hero {
+  max-width: 33.5rem;
+  margin: 0 auto;
+}
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.hero__title {
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 6rem;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.hero__subtitle {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 0.4;
+}
+.hero__button {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 4.2rem;
+}
+.hero__image {
+  border-radius: 13.4px;
+  background-color: #333333;
+}
+@media (min-width: 1280px) {
+  .hero {
+    max-width: 100%;
+    margin: 0 0;
+  }
+  .hero__container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 11.5rem;
+  }
+  .hero__content {
+    align-items: start;
+    max-width: 46.5rem;
+  }
+  .hero__image {
+    flex: 1;
+    max-width: 50rem;
+  }
+  .hero__title {
+    font-size: 6rem;
+    line-height: 9rem;
+    letter-spacing: 0%;
+    text-align: left;
+    max-width: 46.5rem;
+  }
+  .hero__subtitle {
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    letter-spacing: 0%;
+    max-width: 46.5rem;
   }
 }/*# sourceMappingURL=main.css.map */
