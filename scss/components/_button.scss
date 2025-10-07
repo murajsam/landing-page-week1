@@ -6,5 +6,5 @@
 }
 
 .btn-secondary {
-  @include btn($secondary-btn-color, $primary-text-color);
+  @include btn($secondary-btn-color, $secondary-text-color);
 }
