@@ -23,7 +23,7 @@ footer {
 }
 
 main {
-  max-width: 37.5rem;
+  max-width: 33.5rem;
   margin: 0 auto;
   @include respond-to("desktop") {
     max-width: 108rem;
