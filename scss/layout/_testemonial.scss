@@ -1,0 +1,83 @@
+@use "../utils/variables" as *;
+@use "../components/button" as *;
+@use "../utils/mixins" as *;
+
+.testimonial {
+  background-color: $primary-btn-color;
+  border-radius: 2rem;
+  padding: 8rem 3rem;
+  margin-bottom: 5rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+  }
+
+  &__text {
+    &-content {
+      color: $primary-background-color;
+      font-weight: 600;
+      font-size: 2.4rem;
+      line-height: 4rem;
+      letter-spacing: 0%;
+      text-align: center;
+    }
+  }
+
+  &__author {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    &-info {
+      display: flex;
+      flex-wrap: none;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    &-name {
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+      letter-spacing: 0%;
+      opacity: 0.4;
+      color: $primary-background-color;
+    }
+  }
+
+  &__stars {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  &__star {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  @include respond-to("desktop") {
+    padding: 8.3rem 16.2rem;
+    margin-bottom: 3rem;
+
+    &__container {
+      justify-content: center;
+      align-items: baseline;
+      gap: 5rem;
+    }
+
+    &__text {
+      &-content {
+        text-align: left;
+      }
+    }
+
+    &__stars {
+      gap: 0.5rem;
+    }
+  }
+}
