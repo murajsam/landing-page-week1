@@ -28,7 +28,7 @@ footer {
 }
 
 main {
-  max-width: 37.5rem;
+  max-width: 33.5rem;
   margin: 0 auto;
 }
 @media (min-width: 1280px) {
@@ -135,8 +135,6 @@ button {
 }
 
 .hero {
-  max-width: 33.5rem;
-  margin: 0 auto;
   margin-bottom: 7rem;
 }
 .hero__container {
@@ -160,6 +158,9 @@ button {
   letter-spacing: 0%;
   text-align: center;
 }
+.hero__title br {
+  display: none;
+}
 .hero__subtitle {
   font-weight: 400;
   font-size: 1.8rem;
@@ -167,6 +168,9 @@ button {
   letter-spacing: 0%;
   text-align: center;
   opacity: 0.4;
+}
+.hero__subtitle br {
+  display: none;
 }
 .hero__button {
   font-weight: 400;
@@ -177,31 +181,27 @@ button {
   margin-top: 4.2rem;
 }
 .hero__image {
-  border-radius: 13.4px;
-  background-color: #333333;
-  flex: 1;
+  max-width: 33.5rem;
 }
 @media (min-width: 1280px) {
   .hero {
-    max-width: 100%;
-    margin: 0 0;
     margin-bottom: 7.7rem;
   }
   .hero__container {
     flex-direction: row;
-    justify-content: center;
-    gap: 11.5rem;
+    justify-content: space-between;
   }
   .hero__content {
     align-items: start;
-    max-width: 46.5rem;
   }
   .hero__title {
     font-size: 6rem;
     line-height: 9rem;
     letter-spacing: 0%;
     text-align: left;
-    max-width: 46.5rem;
+  }
+  .hero__title br {
+    display: inline;
   }
   .hero__subtitle {
     text-align: left;
@@ -209,9 +209,12 @@ button {
     font-size: 1.8rem;
     line-height: 3.2rem;
     letter-spacing: 0%;
-    max-width: 46.5rem;
+  }
+  .hero__subtitle br {
+    display: inline;
   }
   .hero__image {
+    max-width: 50rem;
     border-radius: 2rem;
   }
 }
@@ -324,7 +327,7 @@ button {
   background-color: #bfaff2;
   border-radius: 2rem;
   padding: 8rem 3rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 .testimonial__container {
   display: flex;
@@ -372,7 +375,7 @@ button {
 @media (min-width: 1280px) {
   .testimonial {
     padding: 8.3rem 16.2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 13rem;
   }
   .testimonial__container {
     justify-content: center;
@@ -384,5 +387,73 @@ button {
   }
   .testimonial__stars {
     gap: 0.5rem;
+  }
+}
+
+.cta {
+  margin-bottom: 5rem;
+}
+.cta__container {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+.cta__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.cta__title {
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 6rem;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.cta__subtitle {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 0.4;
+}
+.cta__button {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 1rem;
+}
+.cta__image {
+  border-radius: 1rem;
+}
+@media (min-width: 1280px) {
+  .cta {
+    margin-bottom: 10rem;
+  }
+  .cta__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .cta__content {
+    align-items: flex-start;
+    text-align: left;
+    gap: 3rem;
+    max-width: 48rem;
+  }
+  .cta__title {
+    text-align: left;
+    font-size: 6rem;
+    line-height: 9rem;
+  }
+  .cta__subtitle {
+    text-align: left;
+  }
+  .cta__image {
+    max-width: 50rem;
   }
 }/*# sourceMappingURL=main.css.map */

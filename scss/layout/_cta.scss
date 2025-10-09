@@ -2,13 +2,12 @@
 @use "../components/button" as *;
 @use "../utils/mixins" as *;
 
-.hero {
-  margin-bottom: 7rem;
+.cta {
+  margin-bottom: 5rem;
+
   &__container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 6rem;
   }
 
@@ -26,10 +25,6 @@
     line-height: 6rem;
     letter-spacing: 0%;
     text-align: center;
-
-    & br {
-      display: none;
-    }
   }
 
   &__subtitle {
@@ -39,10 +34,6 @@
     letter-spacing: 0%;
     text-align: center;
     opacity: 0.4;
-
-    & br {
-      display: none;
-    }
   }
 
   &__button {
@@ -51,50 +42,40 @@
     line-height: 3.2rem;
     letter-spacing: 0%;
     text-align: center;
-    margin-top: 4.2rem;
+    margin-top: 1rem;
   }
 
   &__image {
-    max-width: 33.5rem;
+    border-radius: 1rem;
   }
 
   @include respond-to("desktop") {
-    margin-bottom: 7.7rem;
+    margin-bottom: 10rem;
+
     &__container {
       flex-direction: row;
       justify-content: space-between;
     }
 
     &__content {
-      align-items: start;
+      align-items: flex-start;
+      text-align: left;
+      gap: 3rem;
+      max-width: 48rem;
     }
 
     &__title {
+      text-align: left;
       font-size: 6rem;
       line-height: 9rem;
-      letter-spacing: 0%;
-      text-align: left;
-
-      & br {
-        display: inline;
-      }
     }
 
     &__subtitle {
       text-align: left;
-      font-weight: 400;
-      font-size: 1.8rem;
-      line-height: 3.2rem;
-      letter-spacing: 0%;
-
-      & br {
-        display: inline;
-      }
     }
 
     &__image {
       max-width: 50rem;
-      border-radius: 2rem;
     }
   }
 }
