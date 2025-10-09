@@ -267,4 +267,55 @@ button {
   .product__container {
     border-radius: 2rem;
   }
+}
+
+.features {
+  margin-bottom: 5rem;
+}
+.features__container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 4rem 0;
+}
+.features__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+.features__icon {
+  margin-bottom: 3.8rem;
+  width: 7rem;
+  height: 7rem;
+}
+.features__title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  letter-spacing: 0%;
+  max-width: 31.1rem;
+}
+.features__description {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  letter-spacing: 0%;
+  opacity: 0.4;
+  max-width: 25.5rem;
+}
+@media (min-width: 1280px) {
+  .features {
+    margin-bottom: 3rem;
+  }
+  .features__container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5rem 0;
+  }
+  .features__icon {
+    margin-bottom: 3rem;
+  }
 }/*# sourceMappingURL=main.css.map */
