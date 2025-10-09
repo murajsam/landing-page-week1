@@ -1,7 +1,12 @@
 @use "../utils/variables" as *;
 
-html {
-  font-family: $font-main;
+html,
+body,
+input,
+button,
+select,
+textarea {
+  font-family: $font-main, sans-serif;
   color: $primary-text-color;
   font-size: 62.5%;
 }

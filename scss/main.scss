@@ -3,6 +3,8 @@
 @use "base/reset";
 @use "utils/mixins";
 @use "components/button";
+@use "components/border";
+@use "components/logo";
 @use "layout/header";
 @use "layout/hero";
 @use "layout/partners";
@@ -10,3 +12,4 @@
 @use "layout/features";
 @use "layout/testemonial";
 @use "layout/cta";
+@use "layout/footer";
