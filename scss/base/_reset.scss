@@ -15,6 +15,10 @@ body {
   @include respond-to("desktop") {
     padding: 0 5rem;
   }
+
+  @include respond-to("tablet") {
+    padding: 0 3.5rem;
+  }
 }
 
 header,
@@ -27,6 +31,10 @@ main {
   margin: 0 auto;
   @include respond-to("desktop") {
     max-width: 108rem;
+  }
+
+  @include respond-to("tablet") {
+    max-width: 74rem;
   }
 }
 

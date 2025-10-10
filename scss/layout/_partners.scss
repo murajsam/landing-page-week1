@@ -19,6 +19,21 @@
     }
   }
 
+  @include respond-to("tablet") {
+    margin-bottom: 8rem;
+
+    &__logos {
+      padding: 6.8rem 3rem;
+
+      &-mobile {
+        display: none;
+      }
+      &-desktop {
+        display: block;
+      }
+    }
+  }
+
   @include respond-to("desktop") {
     margin-bottom: 10rem;
 
