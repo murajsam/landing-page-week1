@@ -30,6 +30,13 @@
     }
   }
 
+  @include respond-to("tablet") {
+    margin-bottom: 7.3rem;
+    &__nav {
+      display: block;
+    }
+  }
+
   @include respond-to("desktop") {
     margin-bottom: 7.7rem;
     &__nav {

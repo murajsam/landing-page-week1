@@ -58,6 +58,41 @@
     max-width: 33.5rem;
   }
 
+  @include respond-to("tablet") {
+    margin-bottom: 7.3rem;
+
+    &__container {
+      gap: 3rem;
+    }
+
+    &__content {
+      gap: 2rem;
+    }
+
+    &__title {
+      font-size: 5rem;
+      line-height: 7.5rem;
+
+      & br {
+        display: inline;
+      }
+    }
+
+    &__subtitle {
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+
+      & br {
+        display: inline;
+      }
+    }
+
+    &__image {
+      max-width: 50rem;
+      border-radius: 1.5rem;
+    }
+  }
+
   @include respond-to("desktop") {
     margin-bottom: 7.7rem;
     &__container {

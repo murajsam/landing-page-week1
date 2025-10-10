@@ -22,7 +22,6 @@
   &__content {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     gap: 4rem;
   }
@@ -73,6 +72,28 @@
       &:last-child::after {
         content: "Wallet 2022";
         margin-left: 1rem;
+      }
+    }
+  }
+
+  @include respond-to("tablet") {
+    &__border {
+      margin-bottom: 8.8rem;
+    }
+
+    &__content {
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+
+    &__terms {
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      &-link {
+        flex: 1 1 33%;
       }
     }
   }
